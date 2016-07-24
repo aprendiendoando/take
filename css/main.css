@@ -807,3 +807,11 @@ p {
 .reasons {
   background-color: #82ca9c;
 }
+.reasons article {
+  margin: 2rem;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+.reasons article:first-child {
+  margin-left: 0;
+}
