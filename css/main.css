@@ -510,6 +510,7 @@ h6 {
   -webkit-border-radius: 0 5px 5px 0;
   border-radius: 0 5px 5px 0;
   font-size: 1.5rem;
+  text-decoration: none;
 }
 .btn:hover {
   text-decoration: none;
@@ -520,6 +521,29 @@ h6 {
 }
 .btn:visited {
   color: #fff;
+}
+.btn--small {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+.btn--big {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  display: block;
+  width: 100px;
+}
+.btn--morado {
+  background-color: #bd8cbf;
+}
+.btn--gris {
+  background-color: #e1e1e1;
 }
 form {
   margin-top: 10px;
@@ -595,6 +619,21 @@ p {
   box-shadow: 3px 4px 45px #615f7d;
   padding: 3rem;
 }
+.buy article:first-child {
+  -webkit-flex-basis: 40%;
+  flex-basis: 40%;
+  margin-top: 2.7rem;
+}
+.buy article:last-child {
+  -webkit-flex-basis: 40%;
+  flex-basis: 40%;
+  margin-left: 20%;
+}
+.buy__rs {
+  margin-top: 1rem;
+  color: #c5c5c5;
+  font-size: 1.5rem;
+}
 .developed {
   font-size: 0.81rem;
   font-weight: 700;
@@ -617,6 +656,9 @@ p {
 }
 .footer .left aside:first-child {
   margin-left: 0;
+}
+.footer .left aside li {
+  margin: 0.5rem 0;
 }
 .footer .right {
   margin-left: 7rem;
