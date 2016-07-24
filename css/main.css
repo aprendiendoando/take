@@ -372,9 +372,32 @@ h5,
 h6 {
   margin: 0;
 }
+.img--responsive {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.box {
+  width: 100%;
+  max-width: 1170px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.box--margin {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.text--secundary {
+  font-size: 0.8rem;
+}
+.text--white {
+  color: #fff;
+  text-decoration: none;
+}
 html {
-  color: #222;
-  font-size: 1em;
+  color: #222626;
+  font-size: 16px;
   line-height: 1.4;
 }
 ::-moz-selection {
@@ -409,6 +432,9 @@ fieldset {
 textarea {
   resize: vertical;
 }
+p {
+  color: #959595;
+}
 .browserupgrade {
   margin: 0.2em 0;
   background: #192431;
@@ -417,18 +443,6 @@ textarea {
 }
 body {
   font-family: 'Open Sans', sans-serif;
-}
-.img--responsive {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-.box {
-  width: 100%;
-  max-width: 1170px;
-  padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .header {
   background-image: url("../img/bg-header.jpg");
@@ -463,31 +477,77 @@ body {
   justify-content: center;
   position: relative;
 }
-.header__container .logo {
-  position: absolute;
-  top: 1rem;
-  left: 15px;
-}
 .header__information {
   max-width: 40%;
 }
+.introduction {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+}
 .logo {
   margin: 0;
+  position: absolute;
+  top: 1rem;
+  left: 15px;
 }
 .logo a {
   font-family: 'Galada', cursive;
   color: #fff;
   text-decoration: none;
 }
-.text--white {
-  color: #fff;
+.services {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -o-box-orient: horizontal;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
 }
-.text--secundary {
+.services article {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1 0 20%;
+  -ms-flex: 1 0 20%;
+  flex: 1 0 20%;
+  padding: 4rem 3rem;
+}
+.services article:nth-child(3) {
+  background-image: url("../img/our-clients.jpg");
+}
+.services article:nth-child(4) {
+  -webkit-flex-basis: 53.5%;
+  flex-basis: 53.5%;
+  background-image: url("../img/sign-up.jpg");
+}
+.services article p {
   font-size: 0.8rem;
 }
-.title--section {
+.title {
   font-weight: 300;
+}
+.title--section {
   font-size: 4rem;
+}
+.title--main {
+  font-size: 2rem;
+}
+.title--secundary {
+  font-size: 1.8rem;
 }
 .hidden {
   display: none !important;
@@ -513,4 +573,13 @@ body {
 }
 .invisible {
   visibility: hidden;
+}
+.rosado {
+  background-color: #f5989d;
+}
+.morado--oscuro {
+  background-color: #615f7d;
+}
+.verde--claro {
+  background-color: #82ca9c;
 }

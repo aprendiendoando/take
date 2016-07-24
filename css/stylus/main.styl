@@ -5,8 +5,8 @@
 
 
 html
-    color #222
-    font-size 1em
+    color primary-text
+    font-size 16px
     line-height 1.4
 
 ::-moz-selection
@@ -41,6 +41,9 @@ fieldset
 textarea
     resize vertical
 
+p
+    color primary-text-light
+
 .browserupgrade
     margin 0.2em 0
     background azul-oscuro
@@ -49,18 +52,6 @@ textarea
 
 body
     font-family 'Open Sans', sans-serif
-
-.img--responsive
-    width 100%
-    max-width 100%
-    height auto
-
-.box
-    width 100%
-    max-width 1170px
-    padding 0 15px
-    margin-left auto
-    margin-right auto
 
 .header
     background-image url("../img/bg-header.jpg")
@@ -76,16 +67,17 @@ body
         flex-direction column
         justify-content center
         position relative
-        .logo
-            absolute top 1rem left 15px
     &__information
         max-width 40%
 
 
+.introduction
+    display flex
 
 
 .logo
     margin 0
+    absolute top 1rem left 15px
     a
         font-family: 'Galada', cursive;
         color white
@@ -93,17 +85,29 @@ body
 
 
 
-.text--white
-    color white
-
-.text
-    &--secundary
-        font-size 0.8rem
+.services
+    display flex
+    flex-flow: row wrap;
+    article
+        flex: 1 0 20%
+        padding 4rem 3rem
+        &:nth-child(3)
+            background-image url("../img/our-clients.jpg")
+        &:nth-child(4)
+            flex-basis: 53.5%
+            background-image url("../img/sign-up.jpg")
+        p
+            font-size 0.8rem
 
 .title
+    font-weight: 300
     &--section
-        font-weight: 300
         font-size 4rem
+    &--main
+        font-size 2rem
+    &--secundary
+        font-size 1.8rem
+
 .hidden
     display none !important
 
@@ -128,6 +132,15 @@ body
 
 .invisible
     visibility hidden
+
+.rosado
+    background-color rosado
+
+.morado--oscuro
+    background-color morado--oscuro
+
+.verde--claro
+    background-color verde--claro
 
 
 
