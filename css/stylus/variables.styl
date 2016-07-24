@@ -8,6 +8,7 @@ azul-oscuro = #192431
 blanco= #ffffff
 primary-text = #222626
 primary-text-light = #959595
+gris = #f6f7fa
 
 
 
@@ -38,9 +39,50 @@ h6
 		margin-top 5rem
 		margin-bottom 5rem
 
+.padding
+	&--margin
+		padding-top 5rem
+		padding-bottom 5rem
+
 .text
 	&--secundary
 		font-size 0.8rem
 	&--white
 		color white
 		text-decoration none
+	&--center
+		text-align center
+
+.hidden
+	display none !important
+
+.visuallyhidden
+	border 0
+	clip rect(0 0 0 0)
+	height 1px
+	margin -1px
+	overflow hidden
+	padding 0
+	position absolute
+	width 1px
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus
+	clip auto
+	height auto
+	margin 0
+	overflow visible
+	position static
+	width auto
+
+.invisible
+	visibility hidden
+
+.rosado
+	background-color rosado
+
+.morado--oscuro
+	background-color morado--oscuro
+
+.verde--claro
+	background-color verde--claro
