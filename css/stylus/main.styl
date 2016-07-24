@@ -53,19 +53,27 @@ p
 
 .buy
     background-color gris
-    &__container
-        display: flex
-        flex wrap
     &__cart
         background-color white
         box-shadow 3px 4px 45px morado--oscuro
         padding 3rem
 
+.developed
+    font-size 0.81rem
+    font-weight: 700
+    padding-bottom 0.2rem
+
 .footer
     background-color azul-oscuro
-    &__container
-        display flex
-        flex wrap
+    .left
+        flex 1 0 55%
+        aside
+            margin 0 2rem
+            &:first-child
+                margin-left 0
+    .right
+        margin-left 7rem
+
 
 .header
     background-image url("../img/bg-header.jpg")
@@ -109,11 +117,6 @@ p
         color white
         text-decoration none
 
-.look
-    &__container
-        display flex
-        flex wrap
-
 .services
     display flex
     flex-flow: row wrap;
@@ -136,12 +139,12 @@ p
         font-size 2rem
     &--secundary
         font-size 1.8rem
+        &--small
+            font-size 1.1rem
 
 .reasons
     background-color verde--claro
-    &__container
-        display flex
-        flex wrap
+
 
 
 

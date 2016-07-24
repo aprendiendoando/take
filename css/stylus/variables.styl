@@ -1,3 +1,49 @@
+// Fuentes
+
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon/icomoon.eot?aupg1c');
+    src:    url('../fonts/icomoon/icomoon.eot?aupg1c#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon/icomoon.ttf?aupg1c') format('truetype'),
+        url('../fonts/icomoon/icomoon.woff?aupg1c') format('woff'),
+        url('../fonts/icomoon/icomoon.svg?aupg1c#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-apple-macintosh-logo:before {
+    content: "\e900";
+}
+.icon-windows-8:before {
+    content: "\e901";
+}
+.icon-checkmark:before {
+    content: "\ea10";
+}
+.icon-arrow-right2:before {
+    content: "\ea3c";
+}
+.icon-radio-checked:before {
+    content: "\ea54";
+}
+
+
+
 // Variables
 
 rosado= #f5989d
@@ -35,9 +81,13 @@ h6
 	padding 0 15px
 	margin-left auto
 	margin-right auto
+	&__container
+		display flex
+		flex wrap
 	&--margin
 		margin-top 5rem
 		margin-bottom 5rem
+
 
 .padding
 	&--margin
@@ -52,6 +102,13 @@ h6
 		text-decoration none
 	&--center
 		text-align center
+
+.margin-top
+	margin-top 3rem
+
+.list-none
+	list-style none
+	padding 0
 
 .hidden
 	display none !important
@@ -86,3 +143,49 @@ h6
 
 .verde--claro
 	background-color verde--claro
+
+// Botones
+
+.btn
+	padding 6.2px 15px
+	margin-left -6px
+	margin-top -4px
+	display inline-block
+	color white
+	text-align center
+	vertical-align middle
+	font-size 100%
+	white-space nowrap
+	background-color verde--claro
+	border none
+	cursor pointer
+	border-radius 0 5px 5px 0
+	font-size 1.5rem
+
+
+	&:hover
+		text-decoration none
+	&:active,
+    &:focus
+    	outline:none
+    &:visited
+    	color : white
+
+// Formularios
+
+form
+	margin-top 10px
+
+input
+	display inline-block
+	width 80%
+	padding 10px
+	border-radius 5px 0 0 5px
+	background-color white
+	border 1px solid color--verde
+	color gris
+	&:hover
+		border-color color--verde
+
+
+
