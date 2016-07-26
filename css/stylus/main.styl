@@ -57,12 +57,13 @@ p
         background-color white
         box-shadow 3px 4px 45px morado--oscuro
         padding 3rem
-    article:first-child
-        flex-basis 40%
-        margin-top 2.7rem
-    article:last-child
-        flex-basis 40%
-        margin-left 20%
+        margin-top 2rem
+    // article:first-child
+    //     flex-basis 40%
+    //     margin-top 2.7rem
+    // article:last-child
+    //     flex-basis 40%
+    //     margin-left 20%
     &__rs
         margin-top 1rem
         color #c5c5c5
@@ -76,15 +77,13 @@ p
 .footer
     background-color azul-oscuro
     .left
-        flex 1 0 55%
+        // flex 1 0 55%
         aside
-            margin 0 2rem
-            &:first-child
-                margin-left 0
+            margin 1rem 0
             li
                 margin 0.5rem 0
-    .right
-        margin-left 7rem
+    // .right
+    //     margin-left 7rem
 
 .header
     background-image url("../img/bg-header.jpg")
@@ -101,7 +100,7 @@ p
         justify-content center
         position relative
     &__information
-        max-width 40%
+        max-width 70%
 
 .introduction
     display flex
@@ -118,13 +117,11 @@ p
         flex-direction: column
         height 100vh
         p
-            max-width 40%
+            max-width 80%
 
 .look
     article
-        margin  0 1rem
-        &:first-child
-            margin-left 0
+        margin  1rem 0
 
 .logo
     margin 0
@@ -136,37 +133,34 @@ p
 
 .services
     display flex
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     article
         flex: 1 0 20%
-        padding 4rem 3rem
+        padding 3rem 1rem
         &:nth-child(3)
             background-image url("../img/our-clients.jpg")
         &:nth-child(4)
             flex-basis: 53.5%
             background-image url("../img/sign-up.jpg")
-            p
-                max-width 65%
 
 .title
     font-weight: 300
     &--section
-        font-size 3.5rem
+        font-size 2.5rem
     &--main
-        font-size 2rem
-    &--secundary
         font-size 1.8rem
+    &--secundary
+        font-size 1.4rem
         &--small
             font-size 1.1rem
 
 .reasons
     background-color verde--claro
     article
-        margin 2rem
+        margin 1rem 0
         font-size 0.8rem
         line-height 1.6
-        &:first-child
-            margin-left 0
+
 
 
 
