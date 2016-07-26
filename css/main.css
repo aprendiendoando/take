@@ -444,7 +444,7 @@ h6 {
   padding-bottom: 5rem;
 }
 .text--secundary {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 .text--white {
   color: #fff;
@@ -740,6 +740,12 @@ p {
 .more-power__container p {
   max-width: 40%;
 }
+.look article {
+  margin: 0 1rem;
+}
+.look article:first-child {
+  margin-left: 0;
+}
 .logo {
   margin: 0;
   position: absolute;
@@ -786,8 +792,8 @@ p {
   flex-basis: 53.5%;
   background-image: url("../img/sign-up.jpg");
 }
-.services article p {
-  font-size: 0.8rem;
+.services article:nth-child(4) p {
+  max-width: 65%;
 }
 .title {
   font-weight: 300;
