@@ -69,6 +69,16 @@ p
         color #c5c5c5
         font-size 1.5rem
 
+@media screen and (min-width:64em)
+
+    .buy
+        article:first-child
+            flex-basis 40%
+            margin-top 2.7rem
+        article:last-child
+            flex-basis 40%
+            margin-left 20%
+
 .developed
     font-size 0.81rem
     font-weight: 700
@@ -82,8 +92,40 @@ p
             margin 1rem 0
             li
                 margin 0.5rem 0
+
+@media screen and (min-width:37.5em)
+
+    .footer
+        .left
+            .box__container
+                flex-direction row
+                justify-content center
+                aside
+                    margin 2rem
+
+@media screen and (min-width:57.5em)
+
+    .footer
+        .left
+            .box__container
+                justify-content flex-start
+                aside
+                    &:first-child
+                        margin-left 0
+
+@media screen and (min-width:64em)
+
+    .footer
+        .left
+            flex-basis 50%
+        .right
+            margin-left 7rem
+
+
+
     // .right
     //     margin-left 7rem
+
 
 .header
     background-image url("../img/bg-header.jpg")
@@ -139,9 +181,11 @@ p
         padding 3rem 1rem
         &:nth-child(3)
             background-image url("../img/our-clients.jpg")
+            full-width()
         &:nth-child(4)
             flex-basis: 53.5%
             background-image url("../img/sign-up.jpg")
+            full-width()
 
 .title
     font-weight: 300

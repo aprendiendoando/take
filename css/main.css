@@ -445,6 +445,16 @@ h6 {
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
+@media screen and (min-width: 57.5em) {
+  .box__container {
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -o-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
 .padding--margin {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -634,6 +644,18 @@ p {
   color: #c5c5c5;
   font-size: 1.5rem;
 }
+@media screen and (min-width: 64em) {
+  .buy article:first-child {
+    -webkit-flex-basis: 40%;
+    flex-basis: 40%;
+    margin-top: 2.7rem;
+  }
+  .buy article:last-child {
+    -webkit-flex-basis: 40%;
+    flex-basis: 40%;
+    margin-left: 20%;
+  }
+}
 .developed {
   font-size: 0.81rem;
   font-weight: 700;
@@ -647,6 +669,47 @@ p {
 }
 .footer .left aside li {
   margin: 0.5rem 0;
+}
+@media screen and (min-width: 37.5em) {
+  .footer .left .box__container {
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -o-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -o-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .footer .left .box__container aside {
+    margin: 2rem;
+  }
+}
+@media screen and (min-width: 57.5em) {
+  .footer .left .box__container {
+    -webkit-box-pack: start;
+    -moz-box-pack: start;
+    -o-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+  }
+  .footer .left .box__container aside:first-child {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 64em) {
+  .footer .left {
+    -webkit-flex-basis: 50%;
+    flex-basis: 50%;
+  }
+  .footer .right {
+    margin-left: 7rem;
+  }
 }
 .header {
   background-image: url("../img/bg-header.jpg");
@@ -768,11 +831,21 @@ p {
 }
 .services article:nth-child(3) {
   background-image: url("../img/our-clients.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 .services article:nth-child(4) {
   -webkit-flex-basis: 53.5%;
   flex-basis: 53.5%;
   background-image: url("../img/sign-up.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 .title {
   font-weight: 300;
